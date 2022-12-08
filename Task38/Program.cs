@@ -2,12 +2,6 @@
 // Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
-//void InputArray(int[] array)
-//{
-//    for (int i = 0; i < array.Length; i++)
-//        array[i] = new Random().Next(-100, 100);
-//}
-
 void InputArray(double[] array)
 {
     Random rand = new Random();
@@ -18,9 +12,7 @@ void InputArray(double[] array)
     {
         double sample = rand.NextDouble();
         double scaled = (sample*range) + min;
-//        float f = (float)scaled;
         array[i] = (double)(float)scaled;
-//        Console.WriteLine(f);
     }
 }
 
